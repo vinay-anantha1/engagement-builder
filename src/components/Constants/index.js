@@ -13,4 +13,6 @@ export const ICON_TYPES = {
   DELETE: 'DeleteOutlined',
   SETTING: 'SettingOutlined',
   BRANCHES: 'BranchesOutlined',
+  WAIT_DURATION: 'PauseCircleOutlined',
+  DOWN_TREND: 'FallOutlined',
 };

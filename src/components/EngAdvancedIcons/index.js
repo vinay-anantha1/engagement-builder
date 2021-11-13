@@ -4,6 +4,7 @@ import {Row} from 'antd';
 import EngIcon from '../EngIcon';
 import './index.scss';
 import { Label } from '../Label';
+import {COLORS} from '../Constants/StyleVar';
 
 /**
  * It displays two EngIcon on mouseEnter
@@ -64,7 +65,7 @@ const EngAdvancedIcon = (props) => {
           {actionIconsVisible && getActionIcons(actionNodes)}
         </div>
       </Row>
-      <Label className='advanced-icon-text'>{label}</Label>
+      <Label fontSize='10px' color={COLORS.BLACK}>{label}</Label>
     </>
   );
 };

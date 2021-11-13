@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row } from 'antd';
 import SideBarIcon from './SideBarIcon';
+import { Label } from '../Label';
+import { COLORS } from '../Constants/StyleVar';
 
 const SidebarNodesRendered = ({ nodes = [], isNodeDraggable, endDrag }) =>
   nodes.map((node) => {
@@ -8,7 +10,7 @@ const SidebarNodesRendered = ({ nodes = [], isNodeDraggable, endDrag }) =>
     return (
       <Row className='category-container' key={key}>
         <Row className='align-items-center'>
-          <span type='h4'>{title}</span>
+          <Label fontSize='14px' color={COLORS.DARKBLACK} fontWeight="500">{title}</Label>
         </Row>
         <Row className='icons-container'>
           {children.map((childNode) => (
