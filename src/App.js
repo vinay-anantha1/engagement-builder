@@ -1,5 +1,11 @@
+import EngIcon from "./components/Icons/EngIcon";
+import { ICON_TYPES }  from "./components/Icons/IconTypesMapping";
 function App() {
-  return <h1>Engagement Builder</h1>;
+  return (
+    <>
+      <EngIcon type={ICON_TYPES.SMS} />
+    </>
+  );
 }
 
 export default App;
