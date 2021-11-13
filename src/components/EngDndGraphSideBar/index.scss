@@ -1,0 +1,44 @@
+.dnd-graph-sidebar-container{
+    background: #EBECF0;
+    width: 240px;
+    height: 100vh;
+    display: inline-block;
+    padding: 1rem 1.714rem;
+    overflow: auto;
+
+    .title-row {
+        display: flex;
+
+        .info-icon {
+            display: flex;
+            align-items: center;
+            margin-left: 0.285rem;
+        }
+    }
+
+    .category-container {
+        margin: 1.142rem 0;
+
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .node-container {
+                width: calc(100% / 3);
+                text-align: center;
+                margin: 0.285rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .node-label {
+                    white-space: nowrap;
+                    align-items: center;
+                    display: inline-block;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
