@@ -1,6 +1,6 @@
 import { ICON_TYPES }  from "./components/Constants";
-import { COLORS } from './components/Constants/ColorPallete';
-import EngAdvancedIcon from './components/EngAdvancedIcons';
+import { COLORS } from './components/Constants/StyleVar';
+import EngDndGraphSidebarDoc from './doc/EngDndGraphSidebarDoc';
 
 function App() {
   const actionNodes = [
@@ -18,11 +18,7 @@ function App() {
 
   return (
     <>
-    <EngAdvancedIcon
-      type={ICON_TYPES.SMS}
-      background={COLORS.YELLOW}
-      actionNodes={actionNodes}
-    />
+      <EngDndGraphSidebarDoc />
     </>
   );
 }
