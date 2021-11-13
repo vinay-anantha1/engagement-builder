@@ -1,0 +1,36 @@
+.advanced-icon-container {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+
+        .action-icon-container {
+            position: absolute;
+            padding: 3px;
+        }
+   
+        .top-left-action-icon-container {
+            top: -5px;
+            left: -5px;
+        }
+        .bottom-left-action-icon-container {
+            bottom: -5px;
+            left: -5px;
+        }
+        .top-right-action-icon-container {
+            top: -5px;
+            right: -5px;
+        }
+        .bottom-right-action-icon-container {
+            bottom: -5px;
+            right: -5px;
+        }
+    .advanced-icon-parent {
+        font-size: 32px;
+        border-radius: 18px;
+        padding: 10px;
+    }
+    .advanced-icon-child {
+        font-size: 16px;
+        border-radius: 18px;
+    }
+}
