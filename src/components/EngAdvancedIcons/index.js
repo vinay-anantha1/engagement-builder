@@ -23,9 +23,12 @@ const EngAdvancedIcon = (props) => {
   // Set visibility on mouse enter event and vice-versa
   const [actionIconsVisible, setActionIconsVisibility] = useState(false);
 
-  const getActionIcons = (actionNodes) =>
+  const getActionIcons = (actionNodes, id) =>
     actionNodes?.map((node) => {
-      const { type, background, position } = node;
+      const { type, background, position, props } = node;
+      console.log({ type });
+      //const onClickIcon = () => node.onClick({ blockId: id, actionType: type });
+
       return (
         <EngIcon
           type={type}
@@ -36,6 +39,8 @@ const EngAdvancedIcon = (props) => {
             'action-icon-container',
             'advanced-icon-child'
           )}
+          //onClick={onClickIcon}
+          //{...props}
         />
       );
     });
