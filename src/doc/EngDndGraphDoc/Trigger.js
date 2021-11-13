@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from 'antd';
 import EngIcon from '../../components/EngIcon';
+import { ICON_TYPES } from '../../components/Constants';
 
 const TriggerContainer = styled.div`
   width: ${(props) => props.width}px;
@@ -25,7 +26,7 @@ const Trigger = (props) => {
     <TriggerContainer width={width} height={height} className={className}>
       {showButton && (
         <Button type={buttonProps.type}>
-          <EngIcon type={buttonProps.iconType} />
+          <EngIcon type={ICON_TYPES.SETTING} />
           {buttonProps.title}
         </Button>
       )}

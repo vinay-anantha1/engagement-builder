@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import '@antv/x6-react-shape';
 import { Graph, Markup } from '@antv/x6';
-import { GridLayout } from '@antv/layout';
+import { DagreLayout } from '@antv/layout';
 import { useDrop } from 'react-dnd';
 import { nanoid } from 'nanoid';
 import cloneDeep from 'lodash/cloneDeep';
@@ -35,6 +35,7 @@ import {
   DELETE,
 } from './constants';
 import { COLORS } from '../Constants/StyleVar';
+import { ICON_TYPES } from '../Constants';
 import './index.scss';
 
 const EngBorderedBox = styled.div`
@@ -46,7 +47,7 @@ const EngBorderedBox = styled.div`
 `;
 
 const endIconProps = {
-  type: 'end',
+  type: ICON_TYPES.END,
   style: {
     color: '#b3bac5',
     padding: '9px 0',
@@ -151,7 +152,7 @@ const EngDndGraph = (props) => {
       },
     });
 
-    dagreLayoutRef.current = new GridLayout({
+    dagreLayoutRef.current = new DagreLayout({
       type: GRAPH_LAYOUT_TYPE, // dagre
       rankdir: GRAPH_DIRECTION, // LR
       align: GRAPH_ALIGNMENT, // UL

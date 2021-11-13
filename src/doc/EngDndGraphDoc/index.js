@@ -95,7 +95,7 @@ const entryTrigger = {
 };
 
 const endIconProps = {
-  type: 'end',
+  type: ICON_TYPES.END,
   style: {
     padding: '15px 0',
     color: '#b3bac5',

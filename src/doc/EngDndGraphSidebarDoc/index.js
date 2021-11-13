@@ -53,17 +53,7 @@ const sidebarNodes = [
       {
         id: 'wait',
         type: ICON_TYPES.WAIT,
-        label: 'Wait date',
-      },
-      {
-        id: 'waitDuration',
-        type: ICON_TYPES.WAIT_DURATION,
-        label: 'Wait duration',
-      },
-      {
-        id: 'downTrend',
-        type: ICON_TYPES.DOWN_TREND,
-        label: 'Down Trend',
+        label: 'Wait',
       },
     ],
     color: COLORS.BLUE,

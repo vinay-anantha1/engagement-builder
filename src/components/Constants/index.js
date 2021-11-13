@@ -15,4 +15,5 @@ export const ICON_TYPES = {
   BRANCHES: 'BranchesOutlined',
   WAIT_DURATION: 'PauseCircleOutlined',
   DOWN_TREND: 'FallOutlined',
+  END: 'RightOutlined',
 };
