@@ -25,6 +25,14 @@ An effective open source Engagement Builder UI component to facilitate users to 
 )
 - [Youtube demo video](https://youtu.be/BPuzUTmd540)
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/87369680/141683378-7c0d783b-5058-4c23-b1f0-7c9c4ceec325.png)
+
+![image](https://user-images.githubusercontent.com/87369680/141683629-18edd550-0a0b-47a4-a73f-fb21bc5f1c65.png)
+
+![image](https://user-images.githubusercontent.com/87369680/141683498-360f36fa-87a1-4cab-a357-7d394da03cf7.png)
+
  ## Installation
  Clone the project to your system
 ```bash
@@ -42,13 +50,7 @@ npm start
 * Easy to use interface. Just drag and drop icons to create stunning user journeys.
 * Can be customised to add any icon in the left drag and drop palette, by just specifying the sidebar props. [see below](#code-overview)
 * Can easily add or remove blocks from journey.
-## Screenshots
 
-![image](https://user-images.githubusercontent.com/87369680/141683378-7c0d783b-5058-4c23-b1f0-7c9c4ceec325.png)
-
-![image](https://user-images.githubusercontent.com/87369680/141683629-18edd550-0a0b-47a4-a73f-fb21bc5f1c65.png)
-
-![image](https://user-images.githubusercontent.com/87369680/141683498-360f36fa-87a1-4cab-a357-7d394da03cf7.png)
 ## Code overview
   These are the main areas which can used to customize the app. [Refer this doc file for example](https://github.com/vinay-anantha1/engagement-builder/blob/master/src/doc/EngDndGraphDoc/index.js)
   - EngDndGraph must be wrapped around DndProvider with backend={HTML5Backend}
