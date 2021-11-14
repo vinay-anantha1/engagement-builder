@@ -7,7 +7,7 @@ const SlideDrawer = (props) => {
   }
   return (
     <div className={drawerClasses}>
-      <h1>{props.content}</h1>
+      <h3>{props.content}</h3>
     </div>
   );
 };

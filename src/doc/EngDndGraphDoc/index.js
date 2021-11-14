@@ -240,16 +240,16 @@ function EngDndGraphDoc() {
           {...props}
           graphNodes={graphNodes}
           setGraphNodes={setGraphNodes}
-          onClickConfigure={() => onClickConfigure(true)}
+          onClickConfigure={onClickConfigure}
           onDropNewNode={onDropNewNode}
         />
       </DndProvider>
       <SlideDrawer
-        show={(onClickConfigure = { onClickConfigure })}
+        show={showConfigScreen}
         content='Pass any component to configure this block.'
       />
       {showConfigScreen && (
-        <Backdrop closeSlider={() => onClickConfigure(false)} />
+        <Backdrop closeSlider={() => updateJourneyBlockDetails(selectedBlockId,null)} />
       )}
     </>
   );
