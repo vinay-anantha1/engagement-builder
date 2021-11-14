@@ -69,9 +69,10 @@ const sidebarNodes = [
         label: 'Wait duration',
       },
       {
-        id: 'downTrend',
-        type: ICON_TYPES.DOWN_TREND,
-        label: 'Down Trend',
+        id: 'Engagement split',
+        type: ICON_TYPES.ENGAGEMENT_SPLIT,
+        label: 'Engagement split',
+        isMultiPath: true,
       },
     ],
     color: COLORS.BLUE,
