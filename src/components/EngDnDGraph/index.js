@@ -92,7 +92,9 @@ const EngDndGraph = (props) => {
 
   /* Register Custom Edges
   Currently two types of custom edges are supported,
-  Normal line and dashed line*/
+  Normal line and dashed line
+  When no block nodes are present, dashed line are displayed
+  */
   const registerEdges = useCallback(() => {
     Graph.registerEdge(
       CUSTOM_EDGE_DASHED,
