@@ -190,6 +190,7 @@ function EngDndGraphSidebar() {
         {...props}
         graphNodes={graphNodes}
         setGraphNodes={setGraphNodes}
+        onClickConfigure={()=>{alert('Configure on click as per need')}}
       />
     </DndProvider>
   );
