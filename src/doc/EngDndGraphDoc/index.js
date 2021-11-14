@@ -1,4 +1,4 @@
-import React, { useState ,useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import styled from 'styled-components';
@@ -10,6 +10,8 @@ import cloneDeep from 'lodash/cloneDeep';
 import { COLORS } from '../../components/Constants/StyleVar';
 import { ICON_TYPES } from '../../components/Constants';
 import './index.scss';
+import SlideDrawer from '../../components/SlideDrawer';
+import Backdrop from '../../components/Backdrop';
 
 const EngBorderedBox = styled.div`
   width: ${(props) => props.width || '42'}px;
@@ -100,7 +102,7 @@ const entryTrigger = {
 const endIconProps = {
   type: ICON_TYPES.END,
   style: {
-    color: 'red',
+    color: COLORS.DARK_RED,
     fontSize: '38px',
   },
 };
@@ -188,7 +190,7 @@ const props = {
 function EngDndGraphDoc() {
   /**The graphNodes state will hold info about the Graph*/
   const [graphNodes, setGraphNodes] = useState(initialGraphData);
- 
+
   /**The journeyBlockDetails will hold configuration info about blocks in graphNodes */
   const [journeyBlockDetails, setJourneyBlockDetails] = useState({});
 
@@ -199,9 +201,9 @@ function EngDndGraphDoc() {
   const [selectedBlockId, setSelectedBlockId] = useState(null);
 
   /**On click of configure :
-   * 1) set SelectedBlockId with the block being clicked 
+   * 1) set SelectedBlockId with the block being clicked
    * 2) show configScreen (show Custom Component inside Drawer or Modal)*/
-  const onClickConfigure = blockId => {
+  const onClickConfigure = (blockId) => {
     setSelectedBlockId(blockId);
     setShowConfigScreen(true);
   };
@@ -210,7 +212,7 @@ function EngDndGraphDoc() {
    * add the block info in JourneyBlockDetails also.
    */
   const onDropNewNode = ({ blockId, blockType }) => {
-    setJourneyBlockDetails(prevState => {
+    setJourneyBlockDetails((prevState) => {
       const clonedState = cloneDeep(prevState);
       clonedState[blockId] = {
         blockType,
@@ -221,7 +223,7 @@ function EngDndGraphDoc() {
 
   /**After configuring block info, update state in journeyBlockDetails */
   const updateJourneyBlockDetails = (blockId, blockData) => {
-    setJourneyBlockDetails(prevState => {
+    setJourneyBlockDetails((prevState) => {
       const clonedState = cloneDeep(prevState);
       clonedState[blockId] = {
         ...prevState[blockId],
@@ -231,17 +233,25 @@ function EngDndGraphDoc() {
     });
     setShowConfigScreen(false);
   };
-
   return (
-    <DndProvider backend={HTML5Backend}>
-      <EngDnDGraph
-        {...props}
-        graphNodes={graphNodes}
-        setGraphNodes={setGraphNodes}
-        onClickConfigure={onClickConfigure}
-        onDropNewNode={onDropNewNode} 
+    <>
+      <DndProvider backend={HTML5Backend}>
+        <EngDnDGraph
+          {...props}
+          graphNodes={graphNodes}
+          setGraphNodes={setGraphNodes}
+          onClickConfigure={onClickConfigure}
+          onDropNewNode={onDropNewNode}
+        />
+      </DndProvider>
+      <SlideDrawer
+        show={showConfigScreen}
+        content='Pass any component to configure this block.'
       />
-    </DndProvider>
+      {showConfigScreen && (
+        <Backdrop closeSlider={() => updateJourneyBlockDetails(selectedBlockId,null)} />
+      )}
+    </>
   );
 }
 export default EngDndGraphDoc;
