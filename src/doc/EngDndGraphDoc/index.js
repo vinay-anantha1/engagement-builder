@@ -87,7 +87,7 @@ const entryTrigger = {
   props: {
     triggerContent: (
       <h6 className='eng-trigger-content'>
-        Start journey by defining Entry trigger
+        Start journey by defining any criteria
       </h6>
     ),
   },
@@ -100,8 +100,8 @@ const entryTrigger = {
 const endIconProps = {
   type: ICON_TYPES.END,
   style: {
-    padding: '15px 0',
-    color: '#b3bac5',
+    color: 'red',
+    fontSize: '38px',
   },
 };
 
@@ -178,8 +178,7 @@ export const initialGraphData = [
 const props = {
   sidebarProps: {
     sidebarTitle: 'Building blocks',
-    sidebarDescription:
-      'Drag & drop blocks to create the journey, start with the Entry triggers',
+    sidebarDescription: 'Drag & drop blocks to create the journey',
     nodes: sidebarNodes,
   },
   initialGraphData,
