@@ -70,9 +70,9 @@ const sidebarNodes = [
         label: 'Wait duration',
       },
       {
-        id: 'Engagement split',
-        type: ICON_TYPES.ENGAGEMENT_SPLIT,
-        label: 'Engagement split',
+        id: 'Decision split',
+        type: ICON_TYPES.DECISION_SPLIT,
+        label: 'Decision split',
         isMultiPath: true,
       },
     ],
@@ -111,6 +111,7 @@ export const initialGraphData = [
     component: Label,
     props: {
       children: 'Drag and drop building blocks to complete the journey',
+      color: COLORS.LIGHT_GREY,
     },
     showEdge: false,
     width: 180,

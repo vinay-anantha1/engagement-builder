@@ -18,13 +18,15 @@ export const EngDndGraphSidebar = (props) => {
     <Row className='dnd-graph-sidebar-container'>
       {sidebarTitle && (
         <Row className='align-items-center'>
-          <Label fontSize='16px' fontWeight="500" color={COLORS.DARKBLACK}>
+          <Label fontSize='16px' fontWeight='500' color={COLORS.DARKBLACK}>
             {sidebarTitle}
           </Label>
         </Row>
       )}
       {sidebarDescription && (
-        <Label fontSize='12px' color={COLORS.GREY}>{sidebarDescription}</Label>
+        <Label fontSize='12px' color={COLORS.LIGHT_GREY}>
+          {sidebarDescription}
+        </Label>
       )}
       <SidebarNodesRendered
         nodes={nodes}

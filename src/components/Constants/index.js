@@ -16,5 +16,5 @@ export const ICON_TYPES = {
   WAIT_DURATION: 'PauseCircleOutlined',
   DOWN_TREND: 'FallOutlined',
   END: 'CloseCircleOutlined',
-  ENGAGEMENT_SPLIT: 'PartitionOutlined',
+  DECISION_SPLIT: 'PartitionOutlined',
 };

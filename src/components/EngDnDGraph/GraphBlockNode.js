@@ -11,7 +11,7 @@ const GraphBlockNode = (props) => {
     {
       type: ICON_TYPES.SETTING,
       position: 'top-right',
-      background: COLORS.GREY,
+      background: COLORS.LIGHT_GREY,
       onClick: onClickActionIcon,
       actionType: SETTINGS,
     },
