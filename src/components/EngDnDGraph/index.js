@@ -49,8 +49,8 @@ const EngBorderedBox = styled.div`
 const endIconProps = {
   type: ICON_TYPES.END,
   style: {
-    color: '#b3bac5',
-    padding: '9px 0',
+    color: 'red',
+    fontSize: '38px',
   },
 };
 

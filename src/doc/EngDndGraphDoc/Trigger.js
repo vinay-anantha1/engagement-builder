@@ -47,7 +47,7 @@ const Trigger = (props) => {
 Trigger.defaultProps = {
   showButton: true,
   buttonProps: {
-    title: '  Entry trigger',
+    title: '  Start',
   },
   width: '148px',
   height: '180px',

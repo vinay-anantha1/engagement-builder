@@ -62,8 +62,7 @@ const sidebarNodes = [
 
 const props = {
   sidebarTitle: 'Building blocks',
-  sidebarDescription:
-    'Drag & drop blocks to create the journey, start with the Entry triggers',
+  sidebarDescription: 'Drag & drop blocks to create the journey',
   nodes: sidebarNodes,
 };
 
@@ -72,7 +71,7 @@ function EngDndGraphSidebarDoc() {
     <Layout>
       <Sider width={240}>
         <DndProvider backend={HTML5Backend}>
-          <EngDndGraphSidebar {...props} isNodeDraggable onClickConfigure={()=>{alert('Configure on click as per need')}} />
+          <EngDndGraphSidebar {...props} isNodeDraggable />
         </DndProvider>
       </Sider>
     </Layout>
