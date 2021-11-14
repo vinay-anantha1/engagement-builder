@@ -40,6 +40,21 @@ const sidebarNodes = [
         type: ICON_TYPES.DELIVER,
         label: 'Delivered',
       },
+      {
+        id: 'users',
+        type: ICON_TYPES.USERS,
+        label: 'Users',
+      },
+      {
+        id: 'transaction',
+        type: ICON_TYPES.TRANSACTION,
+        label: 'Transaction',
+      },
+      {
+        id: 'downTrend',
+        type: ICON_TYPES.DOWN_TREND,
+        label: 'Downtrend',
+      },
     ],
     color: COLORS.YELLOW,
   },

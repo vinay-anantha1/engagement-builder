@@ -20,4 +20,6 @@ export const ICON_TYPES = {
   COMMUNICATION: 'GlobalOutlined',
   CART: 'ShoppingCartOutlined',
   DELIVER:'GiftOutlined',
+  USERS: 'UsergroupAddOutlined',
+  TRANSACTION: 'TransactionOutlined',
 };
