@@ -7,6 +7,7 @@ export const COLORS = {
   DARKBLACK: '#091e42',
   BLACK: '#091e42',
   LIGHT_GREY: '#B3BAC5',
+  DARK_RED: '#cd5c5c',
 };
 export const SPACING = {
   SPACE_04: '0.285rem',
