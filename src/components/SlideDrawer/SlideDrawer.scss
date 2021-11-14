@@ -13,3 +13,13 @@
 .side-drawer.open {
   transform: translateX(0);
 }
+.illustration-container{
+  margin-top: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.illustration{
+  height:300px;
+  align-self: center;
+}

@@ -102,7 +102,7 @@ const entryTrigger = {
 const endIconProps = {
   type: ICON_TYPES.END,
   style: {
-    color: 'red',
+    color: COLORS.DARK_RED,
     fontSize: '38px',
   },
 };
