@@ -23,6 +23,7 @@ An effective open source Engagement Builder UI component to facilitate users to 
 ## Demo preview
 [Try it out](https://engagement-builder-foss21.netlify.app/
 )
+[Youtube demo video](https://youtu.be/BPuzUTmd540)
  ## Installation
  Clone the project to your system
 ```bash
