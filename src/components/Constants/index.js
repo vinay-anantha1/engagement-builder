@@ -17,4 +17,7 @@ export const ICON_TYPES = {
   DOWN_TREND: 'FallOutlined',
   END: 'CloseCircleOutlined',
   DECISION_SPLIT: 'PartitionOutlined',
+  COMMUNICATION: 'GlobalOutlined',
+  CART: 'ShoppingCartOutlined',
+  DELIVER:'GiftOutlined',
 };

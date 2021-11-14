@@ -26,34 +26,19 @@ const sidebarNodes = [
     title: 'Engagements',
     children: [
       {
-        id: 'sms',
-        type: ICON_TYPES.SMS,
-        label: 'SMS',
+        id: 'communication',
+        type: ICON_TYPES.COMMUNICATION,
+        label: 'Communication',
       },
       {
-        id: 'email',
-        type: ICON_TYPES.EMAIL,
-        label: 'Email',
+        id: 'cart',
+        type: ICON_TYPES.CART,
+        label: 'Purchase',
       },
       {
-        id: 'mpush',
-        type: ICON_TYPES.PUSH,
-        label: 'M-Push',
-      },
-      {
-        id: 'whatsapp',
-        type: ICON_TYPES.WHATSAPP,
-        label: 'Whatsapp',
-      },
-      {
-        id: 'fb',
-        type: ICON_TYPES.FB,
-        label: 'Facebook',
-      },
-      {
-        id: 'instagram',
-        type: ICON_TYPES.INSTAGRAM,
-        label: 'Instagram',
+        id: 'deliver',
+        type: ICON_TYPES.DELIVER,
+        label: 'Delivered',
       },
     ],
     color: COLORS.YELLOW,
@@ -65,7 +50,7 @@ const sidebarNodes = [
       {
         id: 'wait',
         type: ICON_TYPES.WAIT,
-        label: 'Wait date',
+        label: 'Wait Until',
       },
       {
         id: 'waitDuration',
