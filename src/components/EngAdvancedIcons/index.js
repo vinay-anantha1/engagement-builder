@@ -25,8 +25,8 @@ const EngAdvancedIcon = (props) => {
 
   const getActionIcons = (actionNodes, id) =>
     actionNodes?.map((node) => {
-      const { type, background, position, props } = node;
-      const onClickIcon = () => node.onClick({ blockId: id, actionType: type });
+      const { type, background, position, props, actionType } = node;
+      const onClickIcon = () => node.onClick({ blockId: id, actionType });
 
       return (
         <EngIcon

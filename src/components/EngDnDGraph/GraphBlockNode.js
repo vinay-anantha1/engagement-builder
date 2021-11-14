@@ -13,12 +13,14 @@ const GraphBlockNode = (props) => {
       position: 'top-right',
       background: COLORS.GREY,
       onClick: onClickActionIcon,
+      actionType: SETTINGS,
     },
     {
       type: ICON_TYPES.DELETE,
       position: 'top-left',
       background: COLORS.RED,
       onClick: onClickActionIcon,
+      actionType: DELETE,
     },
   ];
   return (
@@ -27,7 +29,7 @@ const GraphBlockNode = (props) => {
       actionNodes={actionNodes}
       background={color}
       id={id}
-      onClick={() => onClickActionIcon({ blockId: id, actionType: ICON_TYPES.SETTING })}
+      onClick={() => onClickActionIcon({ blockId: id, actionType: SETTINGS })}
     />
   );
 };
