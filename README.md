@@ -15,6 +15,7 @@ An effective open source Engagement Builder UI component to facilitate users to 
  -  [Code overview](#code-overview)
  -  [Authors](#authors)
  -  [Contributing](#contributing)
+ -  [Future plan](#future-plan)
  - [References & Credits](#references)
  - [License](#license)
 ## Motivation
@@ -50,6 +51,11 @@ npm start
 * Easy to use interface. Just drag and drop icons to create stunning user journeys.
 * Can be customised to add any icon in the left drag and drop palette, by just specifying the sidebar props. [see below](#code-overview)
 * Can easily add or remove blocks from journey.
+* Few use cases may include creating user journey flows for 
+  - Educational Institutes(library journey flow to setup reminders if books aren't returned on timeline) 
+  - Hospitals(setup flows for regular checkups and reminders) 
+  - Billings(for payment remiders)
+  - Retail & E-commerce(Journey flows ranging from shopping experience to customer retention)
 
 ## Code overview
   These are the main areas which can used to customize the app. [Refer this doc file for example](https://github.com/vinay-anantha1/engagement-builder/blob/master/src/doc/EngDndGraphDoc/index.js)
@@ -180,6 +186,13 @@ Push the changes in your own branch
 ```
 Create a pull request with base master branch
 ```
+## Future plan
+* Making icon selection palette even more customizable via user inputs.
+* Making icon sidebar expand/collapsible on clicks.
+* 'Join' flows for combining journey paths. 
+* Dark mode support :P
+* Multilingual support
+
 ## References & Credits
 * [ReactJS](https://reactjs.org/)
 * [React DnD](https://react-dnd.github.io/react-dnd/about)
