@@ -6,6 +6,7 @@ export const COLORS = {
   BRIGHT_GREY: '#EBECF0',
   DARKBLACK: '#091e42',
   BLACK: '#091e42',
+  LIGHT_GREY: '#B3BAC5',
 };
 export const SPACING = {
   SPACE_04: '0.285rem',

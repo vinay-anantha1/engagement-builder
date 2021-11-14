@@ -1,0 +1,13 @@
+.eng-graph-builder {
+  display: flex;
+
+  .eng-graph-builder-element {
+    svg {
+      g {
+        body {
+          position: fixed;
+        }
+      }
+    }
+  }
+}
