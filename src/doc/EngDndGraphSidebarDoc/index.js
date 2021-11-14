@@ -72,7 +72,7 @@ function EngDndGraphSidebarDoc() {
     <Layout>
       <Sider width={240}>
         <DndProvider backend={HTML5Backend}>
-          <EngDndGraphSidebar {...props} isNodeDraggable />
+          <EngDndGraphSidebar {...props} isNodeDraggable onClickConfigure={()=>{alert('Configure on click as per need')}} />
         </DndProvider>
       </Sider>
     </Layout>
