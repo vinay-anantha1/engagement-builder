@@ -21,9 +21,10 @@ An effective open source Engagement Builder UI component to facilitate users to 
 - An attempt to create an open source journey builder to help individuals/organization to create an effective journey for their users.
 -  This can be customized as per the requirement.
 ## Demo preview
-[Try it out](https://engagement-builder-foss21.netlify.app/
+-[It's hosted on netlify!! Try it out](https://engagement-builder-foss21.netlify.app/
 )
-[Youtube demo video](https://youtu.be/BPuzUTmd540)
+-[Youtube demo video](https://youtu.be/BPuzUTmd540)
+
  ## Installation
  Clone the project to your system
 ```bash
