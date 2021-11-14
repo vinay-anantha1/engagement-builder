@@ -8,6 +8,7 @@ import EngDnDGraph from '../../components/EngDnDGraph';
 import Trigger from './Trigger';
 import { COLORS } from '../../components/Constants/StyleVar';
 import { ICON_TYPES } from '../../components/Constants';
+import './index.scss';
 
 const EngBorderedBox = styled.div`
   width: ${(props) => props.width || '42'}px;
@@ -84,7 +85,7 @@ const entryTrigger = {
   component: Trigger,
   props: {
     triggerContent: (
-      <h6 style={{ marginTop: '24px', textAlign: 'left', marginLeft: '16px' }}>
+      <h6 className='eng-trigger-content'>
         Start journey by defining Entry trigger
       </h6>
     ),
@@ -109,7 +110,6 @@ export const initialGraphData = [
     id: 'emptyGraphText',
     component: Label,
     props: {
-      type: 'label1',
       children: 'Drag and drop building blocks to complete the journey',
     },
     showEdge: false,

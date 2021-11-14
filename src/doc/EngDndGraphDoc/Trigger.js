@@ -13,9 +13,18 @@ const TriggerContainer = styled.div`
   text-align: center;
   padding: 16px 8px;
 
-  .ant-btn.cap-button-v2 {
-    padding-right: 10px;
-    padding-left: 10px;
+  .ant-btn {
+    line-height: 1.5715;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 4px 15px;
+    border-radius: 2px;
+    color: #fff;
+    background: #1890ff;
+    :hover {
+      background: #389fff;
+    }
   }
 `;
 
@@ -25,7 +34,7 @@ const Trigger = (props) => {
   return (
     <TriggerContainer width={width} height={height} className={className}>
       {showButton && (
-        <Button type={buttonProps.type}>
+        <Button>
           <EngIcon type={ICON_TYPES.SETTING} />
           {buttonProps.title}
         </Button>
@@ -38,9 +47,7 @@ const Trigger = (props) => {
 Trigger.defaultProps = {
   showButton: true,
   buttonProps: {
-    type: 'primary',
-    title: 'Entry trigger',
-    iconType: 'entry',
+    title: '  Entry trigger',
   },
   width: '148px',
   height: '180px',
