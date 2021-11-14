@@ -111,8 +111,7 @@ Below is the initialGraphData being passed to display placeholder nodes during i
 ];
 
 ```
-#### The sidebar on the left consisting of the engagement icons and flow actions that can be customized to show any icons. 
-#### The sidebar props consists of the following structure. the 'type' property in children object is used to provide Icon type. For example if the Antd icon component for Up arrow is < ArrowUpOutlined /> then  the type = 'ArrowUpOutlined'
+The sidebar on the left consisting of the engagement icons and flow actions that can be customized to show any icons.<br/> The sidebar props consists of the following structure. the 'type' property in children object is used to provide Icon type. For example if the Antd icon component for Up arrow is < ArrowUpOutlined /> then  the type = 'ArrowUpOutlined'
 
 ```
 [
@@ -148,9 +147,9 @@ Below is the initialGraphData being passed to display placeholder nodes during i
 ];
 ``` 
 # Authors
-- Vinay Anantha
-- Rishi Jain
-- Rakesh Talukdar
+- [Vinay Anantha](https://github.com/vinay-anantha1)
+- [Rishi Jain](https://github.com/rishiui)
+- [Rakesh Talukdar](https://github.com/rakesh-talukdar)
 
 ## Contributing
 Anyone can contribute to this project by adding new features or fixing bugs using the below steps.
